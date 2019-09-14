@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 160px;
+    width: 140px;
+    float: right;
+    margin-top: -35px;
+    margin-right: 40px;
+}
+
+.logo1 {
+    height: 160px;
+    width: 140px;
+    float: left;
+    margin-top: -35px;
+    margin-left: 40px;
+}
+
+.jumbotron, .jumbotron1 {
+    text-align: center; 
+    text-transform: uppercase;
+    color: navy;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 150%;
+    font-family: 'Bellefair';
+    font-weight: 300;
+}
+
+.jumbotron {
+    font-size: 180%;
+    margin-top: 50px;
+}
+
+.jumbotron1 {
+    font-size: 250%;
+}
+
+.jumbotron1::after {
+    content: " ";
+    background-color: gold;
+    width: 150px;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+    
+}
+  
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Bellefair';
+    font-size: 120%;
+    color: black;
+}
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: gold;
+    color: navy;
+}
+  
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: gold;
+}
+  
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    margin-top: 15px;
+}
+  
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+  
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+  
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+  
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+.heading {
+    text-align: center;
+    font-size: 250%;
+    color: navy;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-family: 'Bellefair';
+}
+
+.rules {
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-family: 'Bellefair';
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 200%;
+    /* border: 2px solid gold;
+    padding: 5px; */
+}
+
+.first, .second {
+    text-align: center;
+    border: 2px solid navy;
+    padding: 5px;
+    box-shadow: 1px 1px 5px inset;
+}
+
+.top-heading, .second-heading {
+    font-family: 'Bellefair';
+    font-size: 150%;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: -9px;
+    left: 15;
+    height: 40px;
+    width: 40px;
+    background-color: navy;
+}
+  
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: gold;
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 15px;
+    top: 2px;
+    width: 5px;
+    height: 30px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.sec-button {
+    padding: 14px;
+}
+
+.house-name {
+    text-align: center;
+}
+
+/* .house-button {
+    border: 2px solid navy;
+} */
+
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.success {
+    border-color: navy;
+    color: navy;
+    text-align: center;
+    float: right;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-right: 45%;
+    font-family: 'Bellefair';
+    font-size: 150%;
+}
+  
+.success:hover {
+    background-color: navy;
+    color: white;
+}
+
+
